@@ -4,19 +4,19 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	
-	<title>Hi</title>
-	<meta name="description" content="None of your business." />
+
+	<title>Happy 2022!!!</title>
+	<meta name="description" content="Have a wonderful day." />
 	<meta name="robots" content="index, follow" />
 	<meta name="referrer" content="always" />
 
 	<!-- Social & Open Graph -->
 	<meta property="og:title" content="Hi" />
-	<meta property="og:description" content="None of your business." />
+	<meta property="og:description" content="Happy 2022!!!" />
 	<!-- <meta property="og:image" content=""> -->
 	<!-- <meta property="og:url" content="" /> -->
-	<meta name="twitter:title" content="Hi" >
-	<meta name="twitter:description" content="None of your business." />
+	<meta name="twitter:title" content="Hi">
+	<meta name="twitter:description" content="Happy 2022!!!" />
 	<!-- <meta name="twitter:image" content="" /> -->
 	<!-- <meta name="twitter:card" content="" /> -->
 	<!-- <meta name="twitter:site" content="" /> -->
@@ -28,12 +28,249 @@
 	<!-- Styles -->
 	<!-- <link rel='stylesheet' href='assets/css/index.css' type='text/css' media='screen' /> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<script defer src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.6/tsparticles.min.js"></script>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			text-align: center;
+		}
+
+		.container {
+			margin: auto;
+		}
+
+		h1 {
+			font-size: 5rem;
+			color: #1971e1;
+			text-shadow: 4px 3px 0px darkgrey;
+		}
+
+		p {
+			font-size: 2rem;
+			text-shadow: 2px 1px 0px lightgrey;
+			margin-bottom: 1rem;
+			margin-top: 1rem;
+		}
+
+		.p1 {
+			color: #e1194b;
+		}
+
+		.p2 {
+			color: #19e119;
+		}
+
+		.p3 {
+			color: #9d1b9f;
+			text-shadow: 2px 1px 0px yellow;
+		}
+
+		#spinner {
+			font-size: 50px;
+			text-align: center;
+			animation-name: spin, depth;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-duration: 10s;
+			transform-style: preserve-3d;
+			position: relative;
+		}
+
+		#spinner::before,
+		#spinner::after {
+			content: "We wish you 365 days of fun and joy!";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			transform: rotateX(0.5deg);
+			transform-origin: 0 50%;
+		}
+
+		#spinner::after {
+			transform: rotateX(-0.5deg);
+			transform-origin: 100% 50%;
+		}
+
+		@keyframes spin {
+			from {
+				transform: rotateX(0deg);
+			}
+
+			to {
+				transform: rotateX(-360deg);
+			}
+		}
+
+		@keyframes depth {
+			0% {
+				text-shadow: 0 0 yellow;
+			}
+
+			25% {
+				text-shadow: 1px 0 yellow, 2px 0 yellow, 3px 0 yellow, 4px 0 yellow, 5px 0 yellow, 6px 0 yellow;
+			}
+
+			50% {
+				text-shadow: 0 0 yellow;
+			}
+
+			75% {
+				text-shadow: -1px 0 yellow, -2px 0 yellow, -3px 0 yellow, -4px 0 yellow, -5px 0 yellow, -6px 0 yellow;
+			}
+
+			100% {
+				text-shadow: 0 0 yellow;
+			}
+		}
+	</style>
 </head>
 
 <body>
-    <h1>Hi there!</h1>
-    <h2>Nothing to see here.</h2>
-    <p>Mind your own business. Check back later maybe.</p>
-    <img src="images/not_sure_if.jpg" alt="Picture of a handsome cat.">
+	<div id="tsparticles"></div>
+	<div class="overlay">
+		<div class="container">
+			<h1>HAPPY 2022!!!</h1>
+			<marquee behavior="" direction="right">
+				<p class="p1">Out with the old,</p>
+			</marquee>
+			<marquee behavior="" direction="left">
+				<p class="p2">In with the new</p>
+			</marquee>
+			<p id="spinner" class="p3">We wish you 365 days of fun and joy!</p>
+		</div>
+	</div>
+	<script>
+		window.addEventListener('DOMContentLoaded', function () {
+			tsParticles.load("tsparticles", {
+				"particles": {
+					"number": {
+						"value": Math.min(Math.ceil((window.innerWidth * window.innerHeight) * 0.0002), 200)
+					},
+					"shape": {
+						"type": "image",
+						"image": [{
+							"src": "./images/tosti_1.png",
+							"width": 10,
+							"height": 10
+						},
+						{
+							"src": "./images/tosti_2.png",
+							"width": 10,
+							"height": 10
+						},
+						{
+							"src": "./images/tosti_3.png",
+							"width": 10,
+							"height": 10
+						}, {
+							"src": "./images/jujube_1.png",
+							"width": 10,
+							"height": 10
+						}, {
+							"src": "./images/jujube_2.png",
+							"width": 10,
+							"height": 10
+						}, {
+							"src": "./images/jujube_3.png",
+							"width": 10,
+							"height": 10
+						}, {
+							"src": "./images/tosti_and_jujube_1.png",
+							"width": 10,
+							"height": 10
+						}]
+					},
+					"rotate": {
+						"random": {
+							"enable": true,
+							"minimumValue": 0,
+						},
+						"animation": {
+							"enable": true,
+							"speed": 2,
+							"sync": false
+						},
+						"direction": "random"
+					},
+					"opacity": {
+						"value": 1,
+						"random": true,
+						"anim": {
+							"enable": true,
+							"speed": 0.3,
+							"opacity_min": 0,
+							"sync": false
+						}
+					},
+					"size": {
+						"value": 40,
+						"random": {
+							"enable": true,
+							"minimumValue": 1
+						},
+						"anim": {
+							"enable": false,
+							"speed": 4,
+							"minimumValue": 1,
+							"sync": false
+						}
+					},
+					"move": {
+						"enable": true,
+						"speed": 1,
+						"direction": "none",
+						"random": true,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": {
+							"enable": false,
+							"rotateX": 600,
+							"rotateY": 600
+						}
+					}
+				},
+				"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": {
+							"enable": true,
+							"mode": "bubble"
+						},
+						"onclick": {
+							"enable": true,
+							"mode": ["attract"]
+						},
+						"resize": true
+					},
+					"modes": {
+						"bubble": {
+							"distance": 400,
+							"size": 100,
+							"speed": 30
+						},
+						"repulse": {
+							"distance": 200,
+							"duration": 0.4
+						},
+						"push": {
+							"quantity": 4
+						}
+					}
+				},
+				"retina_detect": true
+			});
+		});
+	</script>
 </body>
+
 </html>
