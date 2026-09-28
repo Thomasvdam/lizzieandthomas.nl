@@ -1,290 +1,116 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<title>Happy 2022!!!</title>
-	<meta name="description" content="Have a wonderful day." />
-	<meta name="robots" content="index, follow" />
-	<meta name="referrer" content="always" />
-
-	<!-- Social & Open Graph -->
-	<meta property="og:title" content="Hi" />
-	<meta property="og:description" content="Happy 2022!!!" />
-	<!-- <meta property="og:image" content=""> -->
-	<!-- <meta property="og:url" content="" /> -->
-	<meta name="twitter:title" content="Hi">
-	<meta name="twitter:description" content="Happy 2022!!!" />
-	<!-- <meta name="twitter:image" content="" /> -->
-	<!-- <meta name="twitter:card" content="" /> -->
-	<!-- <meta name="twitter:site" content="" /> -->
-	<!-- <meta name="twitter:creator" content="" /> -->
-
-	<!-- Favicon -->
-	<!-- <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32"> -->
-
-	<!-- Styles -->
-	<!-- <link rel='stylesheet' href='assets/css/index.css' type='text/css' media='screen' /> -->
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<script defer src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.6/tsparticles.min.js"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
-
-	<style>
-		body {
-			margin: 0;
-		}
-
-		.overlay {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			text-align: center;
-		}
-
-		.container {
-			margin: auto;
-		}
-
-		h1 {
-			font-size: 5rem;
-			color: #1971e1;
-			text-shadow: 4px 3px 0px darkgrey;
-		}
-
-		p {
-			font-size: 2rem;
-			text-shadow: 2px 1px 0px lightgrey;
-			margin-bottom: 1rem;
-			margin-top: 1rem;
-		}
-
-		.p1 {
-			color: #e1194b;
-		}
-
-		.p2 {
-			color: #19e119;
-		}
-
-		.p3 {
-			color: #9d1b9f;
-			text-shadow: 2px 1px 0px yellow;
-		}
-
-		#spinner {
-			font-size: 50px;
-			text-align: center;
-			animation-name: spin, depth;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			animation-duration: 10s;
-			transform-style: preserve-3d;
-			position: relative;
-		}
-
-		#spinner::before,
-		#spinner::after {
-			content: "We wish you 365 days of fun and joy!";
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			transform: rotateX(0.5deg);
-			transform-origin: 0 50%;
-		}
-
-		#spinner::after {
-			transform: rotateX(-0.5deg);
-			transform-origin: 100% 50%;
-		}
-
-		@keyframes spin {
-			from {
-				transform: rotateX(0deg);
-			}
-
-			to {
-				transform: rotateX(-360deg);
-			}
-		}
-
-		@keyframes depth {
-			0% {
-				text-shadow: 0 0 yellow;
-			}
-
-			25% {
-				text-shadow: 1px 0 yellow, 2px 0 yellow, 3px 0 yellow, 4px 0 yellow, 5px 0 yellow, 6px 0 yellow;
-			}
-
-			50% {
-				text-shadow: 0 0 yellow;
-			}
-
-			75% {
-				text-shadow: -1px 0 yellow, -2px 0 yellow, -3px 0 yellow, -4px 0 yellow, -5px 0 yellow, -6px 0 yellow;
-			}
-
-			100% {
-				text-shadow: 0 0 yellow;
-			}
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffe66d">
+  <meta name="description" content="A little bit of joy for 2026, from Lizzie, Thomas, Tosti and Jujube.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy 2026! — Lizzie & Thomas">
+  <meta property="og:description" content="A little bit of joy for 2026.">
+  <meta property="og:image" content="https://lizzieandthomas.nl/images/tosti_and_jujube_1.png">
+  <meta property="og:url" content="https://lizzieandthomas.nl/">
+  <title>Happy 2026! — Lizzie & Thomas</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light; --ink: #252030; --yellow: #ffe66d; --pink: #ff719c; --blue: #4d72e8; --mint: #83dfb7; --cream: #fff9e9; }
+    * { box-sizing: border-box; }
+    body { min-width: 320px; margin: 0; overflow-x: hidden; background: var(--yellow); color: var(--ink); font-family: "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif; }
+    button { font: inherit; }
+    .page { position: relative; isolation: isolate; min-height: 100svh; overflow: hidden; background: radial-gradient(circle at 10% 15%, #fff8c8 0 3px, transparent 4px) 0 0 / 45px 45px, radial-gradient(circle at 70% 70%, #f2c94c 0 2px, transparent 3px) 0 0 / 63px 63px, var(--yellow); }
+    .page::before, .page::after { content: ""; position: absolute; z-index: -1; width: 44vw; height: 44vw; min-width: 330px; min-height: 330px; border: 3px solid var(--ink); border-radius: 45% 55% 61% 39% / 57% 42% 58% 43%; opacity: .85; }
+    .page::before { top: 7%; left: -30vw; background: var(--mint); transform: rotate(-25deg); }
+    .page::after { right: -32vw; bottom: -22vw; background: var(--pink); transform: rotate(25deg); }
+    .ticker { position: relative; z-index: 2; overflow: hidden; padding: 10px 0; border-bottom: 3px solid var(--ink); background: var(--ink); color: var(--cream); font-size: .8rem; font-weight: 900; letter-spacing: .18em; text-align: center; text-transform: uppercase; white-space: nowrap; word-spacing: .45em; }
+    .ticker span { color: var(--yellow); }
+    main { position: relative; width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: clamp(30px, 5vw, 64px) 0 64px; text-align: center; }
+    .eyebrow { display: inline-block; margin: 0 0 12px; padding: 8px 17px; border: 3px solid var(--ink); border-radius: 100px; background: var(--cream); box-shadow: 4px 4px 0 var(--ink); font-size: clamp(.75rem, 1.5vw, .95rem); font-weight: 900; letter-spacing: .16em; text-transform: uppercase; transform: rotate(-3deg); }
+    h1 { position: relative; z-index: 1; margin: 0; font-family: Impact, "Arial Black", sans-serif; font-size: clamp(5.5rem, 17vw, 13.5rem); font-weight: 900; letter-spacing: -.055em; line-height: .79; text-transform: uppercase; -webkit-text-stroke: clamp(2px, .35vw, 4px) var(--ink); paint-order: stroke fill; filter: drop-shadow(7px 9px 0 var(--ink)); }
+    h1 span { display: block; }
+    h1 .happy { color: var(--pink); transform: rotate(-3deg); }
+    h1 .year { color: var(--blue); transform: rotate(2deg); }
+    .party-stage { position: relative; width: min(760px, 100%); margin: clamp(12px, 2vw, 25px) auto 0; }
+    .cat-frame { position: relative; width: min(660px, 90%); aspect-ratio: 1.37; margin: 0 auto; border: 4px solid var(--ink); border-radius: 46% 54% 48% 52% / 51% 42% 58% 49%; background: var(--pink); box-shadow: 12px 12px 0 var(--ink); transform: rotate(-3deg); }
+    .cat-frame::before { content: ""; position: absolute; inset: 8%; border: 3px dashed rgba(255, 249, 233, .8); border-radius: 50%; }
+    .cats { position: absolute; right: -2%; bottom: 2%; width: 104%; max-height: 104%; object-fit: contain; filter: drop-shadow(4px 12px 0 rgba(37, 32, 48, .17)); transform: rotate(3deg); }
+    .sticker { position: absolute; z-index: 2; display: grid; place-items: center; border: 3px solid var(--ink); color: var(--ink); font-weight: 900; line-height: 1.05; text-align: center; text-transform: uppercase; }
+    .sticker-one { top: 5%; left: -4%; width: clamp(105px, 17vw, 155px); aspect-ratio: 1; border-radius: 50%; background: var(--mint); box-shadow: 5px 6px 0 var(--ink); font-size: clamp(.84rem, 2vw, 1.3rem); transform: rotate(-17deg); }
+    .sticker-two { right: -3%; bottom: 12%; width: clamp(105px, 17vw, 156px); aspect-ratio: 1; padding: 8px; border-radius: 35% 65% 38% 62% / 55% 34% 66% 45%; background: var(--cream); box-shadow: 5px 6px 0 var(--ink); font-size: clamp(.85rem, 2vw, 1.25rem); transform: rotate(13deg); }
+    .star { position: absolute; z-index: 2; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; -webkit-text-stroke: 2px var(--ink); paint-order: stroke fill; }
+    .star-one { top: 8%; right: 5%; color: var(--cream); transform: rotate(20deg); }
+    .star-two { left: 6%; bottom: 10%; color: var(--blue); transform: rotate(-13deg); }
+    .message { position: relative; z-index: 2; width: fit-content; max-width: 100%; margin: -12px auto 0; padding: 13px 24px; border: 3px solid var(--ink); background: var(--cream); box-shadow: 6px 7px 0 var(--ink); font-size: clamp(1.1rem, 2.6vw, 1.65rem); font-weight: 900; transform: rotate(2deg); }
+    .message em { color: #bb2357; font-style: normal; }
+    .actions { margin-top: 36px; }
+    .party-button { min-height: 58px; padding: 12px 27px; border: 3px solid var(--ink); border-radius: 100px; background: var(--blue); box-shadow: 6px 7px 0 var(--ink); color: white; cursor: pointer; font-size: 1.05rem; font-weight: 900; letter-spacing: .03em; transform: rotate(-2deg); transition: transform .15s ease, box-shadow .15s ease; }
+    .party-button:hover { transform: rotate(2deg) translateY(-3px); box-shadow: 7px 10px 0 var(--ink); }
+    .party-button:active { transform: translate(5px, 6px); box-shadow: 1px 1px 0 var(--ink); }
+    .party-button:focus-visible { outline: 4px solid #b91d56; outline-offset: 5px; }
+    .signoff { margin: 22px 0 0; font-size: .95rem; font-weight: 700; }
+    .confetti { position: fixed; z-index: 10; top: -30px; left: var(--left); width: var(--size); height: calc(var(--size) * 1.6); border: 1px solid var(--ink); border-radius: 2px; background: var(--color); pointer-events: none; animation: fall var(--duration) linear forwards; animation-delay: var(--delay); }
+    @keyframes fall { to { transform: translate3d(var(--drift), 110vh, 0) rotate(var(--spin)); opacity: .7; } }
+    @media (max-width: 600px) {
+      main { padding-top: 38px; }
+      h1 { font-size: clamp(5rem, 20vw, 8rem); filter: drop-shadow(4px 5px 0 var(--ink)); }
+      .party-stage { margin-top: 22px; }
+      .cat-frame { width: 94%; box-shadow: 7px 8px 0 var(--ink); }
+      .sticker-one { left: -1%; top: -8%; }
+      .sticker-two { right: -2%; bottom: -1%; }
+      .star-one { top: -6%; right: 5%; }
+      .star-two { left: 4%; bottom: 3%; }
+      .message { margin-top: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .party-button { transition: none; } .confetti { animation: none; display: none; } }
+  </style>
 </head>
-
 <body>
-	<div id="tsparticles"></div>
-	<div class="overlay">
-		<div class="container">
-			<h1>HAPPY 2022!!!</h1>
-			<marquee behavior="" direction="right">
-				<p class="p1">Out with the old,</p>
-			</marquee>
-			<marquee behavior="" direction="left">
-				<p class="p2">In with the new</p>
-			</marquee>
-			<p id="spinner" class="p3">We wish you 365 days of fun and joy!</p>
-		</div>
-		<div style="position: absolute; width: 100%; height: 100%" id="fireworks"></div>
-	</div>
-	<script>
-		window.addEventListener('DOMContentLoaded', function () {
-			tsParticles.load("tsparticles", {
-				"particles": {
-					"number": {
-						"value": Math.min(Math.ceil((window.innerWidth * window.innerHeight) * 0.0002), 200)
-					},
-					"shape": {
-						"type": "image",
-						"image": [{
-							"src": "./images/tosti_1.png",
-							"width": 10,
-							"height": 10
-						},
-						{
-							"src": "./images/tosti_2.png",
-							"width": 10,
-							"height": 10
-						},
-						{
-							"src": "./images/tosti_3.png",
-							"width": 10,
-							"height": 10
-						}, {
-							"src": "./images/jujube_1.png",
-							"width": 10,
-							"height": 10
-						}, {
-							"src": "./images/jujube_2.png",
-							"width": 10,
-							"height": 10
-						}, {
-							"src": "./images/jujube_3.png",
-							"width": 10,
-							"height": 10
-						}, {
-							"src": "./images/tosti_and_jujube_1.png",
-							"width": 10,
-							"height": 10
-						}]
-					},
-					"rotate": {
-						"random": {
-							"enable": true,
-							"minimumValue": 0,
-						},
-						"animation": {
-							"enable": true,
-							"speed": 2,
-							"sync": false
-						},
-						"direction": "random"
-					},
-					"opacity": {
-						"value": 1,
-						"random": true,
-						"anim": {
-							"enable": true,
-							"speed": 0.3,
-							"opacity_min": 0,
-							"sync": false
-						}
-					},
-					"size": {
-						"value": 40,
-						"random": {
-							"enable": true,
-							"minimumValue": 1
-						},
-						"anim": {
-							"enable": false,
-							"speed": 4,
-							"minimumValue": 1,
-							"sync": false
-						}
-					},
-					"move": {
-						"enable": true,
-						"speed": 1,
-						"direction": "none",
-						"random": true,
-						"straight": false,
-						"out_mode": "out",
-						"bounce": false,
-						"attract": {
-							"enable": false,
-							"rotateX": 600,
-							"rotateY": 600
-						}
-					}
-				},
-				"interactivity": {
-					"detect_on": "canvas",
-					"events": {
-						"onhover": {
-							"enable": true,
-							"mode": "bubble"
-						},
-						"onclick": {
-							"enable": true,
-							"mode": ["attract"]
-						},
-						"resize": true
-					},
-					"modes": {
-						"bubble": {
-							"distance": 400,
-							"size": 100,
-							"speed": 30
-						},
-						"repulse": {
-							"distance": 200,
-							"duration": 0.4
-						},
-						"push": {
-							"quantity": 4
-						}
-					}
-				},
-				"retina_detect": true
-			});
-			const fireworks = new Fireworks(document.querySelector('#fireworks'), {
-				brightness: {
-					min: 10,
-					max: 50,
-				},
-				delay: {
-					min: 0,
-					max: 5,
-				}
-			});
-			fireworks.start()
-		});
-	</script>
+  <div class="page">
+    <div class="ticker" aria-hidden="true">✦ &nbsp; GOOD VIBES ONLY &nbsp; <span>★</span> &nbsp; THE YEAR OF MORE NONSENSE &nbsp; ✦ &nbsp; GOOD VIBES ONLY &nbsp; <span>★</span> &nbsp; THE YEAR OF MORE NONSENSE &nbsp; ✦</div>
+    <main>
+      <p class="eyebrow">Lizzie &amp; Thomas present...</p>
+      <h1><span class="happy">Happy</span><span class="year">2026!</span></h1>
+      <div class="party-stage">
+        <div class="cat-frame">
+          <img class="cats" src="images/tosti_and_jujube_1.png" alt="Tosti and Jujube, two cats lounging together" width="2089" height="1457">
+        </div>
+        <span class="sticker sticker-one" aria-hidden="true">100%<br>good<br>chaos</span>
+        <span class="sticker sticker-two" aria-hidden="true">More naps<br>please!</span>
+        <span class="star star-one" aria-hidden="true">✳</span>
+        <span class="star star-two" aria-hidden="true">✦</span>
+      </div>
+      <p class="message">Wishing you <em>365 days</em> of fun &amp; joy!</p>
+      <div class="actions"><button class="party-button" id="party-button" type="button">MORE CONFETTI! 🎉</button></div>
+      <p class="signoff">With love, Lizzie, Thomas, Tosti &amp; Jujube ♡</p>
+    </main>
+  </div>
+  <script>
+    const partyButton = document.querySelector('#party-button');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const colors = ['#ff719c', '#4d72e8', '#83dfb7', '#fff9e9', '#f79e45'];
+    let buttonReset;
+    function throwConfetti() {
+      partyButton.textContent = 'PARTY TIME! 🎉';
+      clearTimeout(buttonReset);
+      buttonReset = setTimeout(() => { partyButton.textContent = 'MORE CONFETTI! 🎉'; }, 1800);
+      if (reducedMotion.matches) return;
+      const fragment = document.createDocumentFragment();
+      for (let i = 0; i < 75; i += 1) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti';
+        piece.setAttribute('aria-hidden', 'true');
+        piece.style.setProperty('--left', `${Math.random() * 100}vw`);
+        piece.style.setProperty('--size', `${6 + Math.random() * 10}px`);
+        piece.style.setProperty('--color', colors[i % colors.length]);
+        piece.style.setProperty('--duration', `${2.5 + Math.random() * 2}s`);
+        piece.style.setProperty('--delay', `${Math.random() * 0.5}s`);
+        piece.style.setProperty('--drift', `${(Math.random() - 0.5) * 220}px`);
+        piece.style.setProperty('--spin', `${Math.random() * 1000}deg`);
+        piece.addEventListener('animationend', () => piece.remove(), { once: true });
+        fragment.append(piece);
+      }
+      document.body.append(fragment);
+    }
+    partyButton.addEventListener('click', throwConfetti);
+  </script>
 </body>
-
 </html>
